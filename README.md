@@ -5,4 +5,5 @@
 ตัวอย่างการแทรกรูป
 
 
-fcvEz8dd.jpg
+![ชื่อไฟล์ในgithub] วงเล็บเปิด ชื่อรูป วงเล็บปิด
+![LogoKKUthai_150px.png](LogoKKUthai_150px.png)
