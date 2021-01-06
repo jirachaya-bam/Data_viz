@@ -1,0 +1,1492 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled10.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyOIEWqMaKQOJOAhxvvuH7SH",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/jirachaya-bam/Data_viz/blob/main/python101.inpynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "KETnDnbxNfLa"
+      },
+      "source": [
+        "Variables\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ZRXcjSqfNliU",
+        "outputId": "bbff446f-70fe-4d20-ec84-37734748053d"
+      },
+      "source": [
+        "3.14159265359"
+      ],
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "3.14159265359"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 1
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "IWCSn4pnNsOc"
+      },
+      "source": [
+        "หลักการตั้งชื่อตัวแปรเบื้องต้น\n",
+        "\n",
+        "1.ตั้งให้สื่อ\n",
+        "\n",
+        "2.ภาษาอังกฤษ\n",
+        "\n",
+        "3.ใช้ตัวเลขได้แต่ห้ามขึ้นต้นด้วยตัวเลข\n",
+        "\n",
+        "4.ห้ามเว้นวรรค"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QfIHH15FN_9E",
+        "outputId": "50214027-57b1-4a7a-a9b0-232b4cebf6b8"
+      },
+      "source": [
+        "pi = 3.14159265359\n",
+        "pi"
+      ],
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "3.14159265359"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 2
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "YKKtPcPVOMZY"
+      },
+      "source": [
+        "int : จำนวนเต็ม"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ur4udbW1ORiC",
+        "outputId": "fd4e2b5b-c310-4c70-a28b-0b1614c12c30"
+      },
+      "source": [
+        "a = 10\n",
+        "print(a)"
+      ],
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "10\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "1lPyoh7eOZRr"
+      },
+      "source": [
+        "float :ทศนิยม"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "h9OAkLTCOcz0",
+        "outputId": "16e5a11c-a0c3-4a7a-8ccc-3cb6501d15aa"
+      },
+      "source": [
+        "b = 10\n",
+        "print(b)"
+      ],
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "10\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "gG-FRAmvOi8G"
+      },
+      "source": [
+        "char : ข้อความหรือตัวอักษร"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "IhlpTtYeOn8O",
+        "outputId": "1ac687fe-ab6b-48dd-bdb4-8cb3288b4120"
+      },
+      "source": [
+        "c = 'JIRACHAYA'\n",
+        "print(c)"
+      ],
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "JIRACHAYA\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "YD5KhudbOz2n"
+      },
+      "source": [
+        "การเปลี่ยน char เป็น int\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "wukKUVYUO6mD"
+      },
+      "source": [
+        "ตัวเลขที่เป็นstringไม่สามารถนำมา+-*\\กับตัวเลขได้"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JWKP4XVEPNGv",
+        "outputId": "a4ce46eb-0850-46fd-84f7-1cf955404e77"
+      },
+      "source": [
+        "d = '10'\n",
+        "print(d)"
+      ],
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "10\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 171
+        },
+        "id": "P-tIgSW5PbtL",
+        "outputId": "de5547b4-325f-4985-e278-6363a35c0810"
+      },
+      "source": [
+        "d+1"
+      ],
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "TypeError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-7-1e06e37b4525>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0md\u001b[0m\u001b[0;34m+\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m: must be str, not int"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "P-Uf0eLLPxQO"
+      },
+      "source": [
+        "variable casting(การเปลี่ยนชนิดของข้อมูล)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_-w1coQUP4rI",
+        "outputId": "fed1acda-f014-400c-ef15-d52c94f75594"
+      },
+      "source": [
+        "int(d) + 1"
+      ],
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "11"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 8
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9gWuLBR7QA3f",
+        "outputId": "39592bdb-ec4f-4283-fb7a-88ef6af7186f"
+      },
+      "source": [
+        "print(a)\n",
+        "print(float(a))\n",
+        "print(str(a))"
+      ],
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "10\n",
+            "10.0\n",
+            "10\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "DMQ0lm4YQSjp"
+      },
+      "source": [
+        "Operation(Operators+,-,*,/,%)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8v9XAZRGQepJ",
+        "outputId": "b63c0b52-7504-4eeb-bb87-8021c7851246"
+      },
+      "source": [
+        "a+b"
+      ],
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "20"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 10
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "aD_PChscQidr",
+        "outputId": "1bd1a860-c55a-4f12-96bf-d42bf242fcc8"
+      },
+      "source": [
+        "ab = a+b\n",
+        "print(ab)"
+      ],
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "20\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "xnBSKi6jQrdv"
+      },
+      "source": [
+        "%เครื่องหมาย modulo"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "U8W8zCh1QxUJ",
+        "outputId": "821922bd-9240-472c-cfd0-ed8c44b38a19"
+      },
+      "source": [
+        "5%3"
+      ],
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "2"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 12
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "d8mfRsPOQ14g",
+        "outputId": "15fc494b-323f-4acb-a90d-69bfdf1a505c"
+      },
+      "source": [
+        "7%2"
+      ],
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "1"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 13
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "yxWwTFmxQ414"
+      },
+      "source": [
+        "คำสั่ง print แบบพิเศษ (การ fomat strint)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "uXJycAI1Q_2g",
+        "outputId": "3a3b2e91-b66a-4551-d318-02770a03a0a3"
+      },
+      "source": [
+        "print('ตัวแปร') #สิ่งที่อยู่ในวงเล็บคือตัวแปร และstring"
+      ],
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "ตัวแปร\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Zf8tXbVcRev5",
+        "outputId": "cf5b792a-71d3-4c24-d526-9b95df5f38f9"
+      },
+      "source": [
+        "print(f'% คือการหารเอาเศษ เช่น 7%3 ={7%3}')"
+      ],
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "% คือการหารเอาเศษ เช่น 7%3 =1\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Iqtft7lzRvYt",
+        "outputId": "ed51d5b1-c504-405d-8a88-0dd57db126dd"
+      },
+      "source": [
+        "print(f'% คือการหารเอาเศษ เช่น 7%3 ={7%3} \\\\\n",
+        "          แต่ \\n/ คือการหารปกติ เช่น 7/3 = {7/3} \\\\\n",
+        "          และ \\n// คือการหารเอาส่วน เช่น 7//3 = {7//3} \\\\\n",
+        "          หรือ\\nใช้ int เพื่อหารเอาส่วน เช่น int(7/3) = {int(7/3)}')\n"
+      ],
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "% คือการหารเอาเศษ เช่น 7%3 =1 \\          แต่ \n",
+            "/ คือการหารปกติ เช่น 7/3 = 2.3333333333333335 \\          และ \n",
+            "// คือการหารเอาส่วน เช่น 7//3 = 2 \\          หรือ\n",
+            "ใช้ int เพื่อหารเอาส่วน เช่น int(7/3) = 2\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "ft-ht4aUSvV7"
+      },
+      "source": [
+        "DATA STRUCTURE (โครงสร้างข้อมูล)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "e8awcxfWS4yU"
+      },
+      "source": [
+        "List คือ การเอาตัวแปรหลายๆตัวมาเรียงกัน :เป็นได้ทั้งตัวเลขและอักขระ\n",
+        "\n",
+        "list สามารถสร้างได้ 2 แบบ ดังนี้"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "hMqhZeYTTMMw"
+      },
+      "source": [
+        "แบบที่ 1 >square brackets"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Gg8W4n6_TVAz",
+        "outputId": "56918c3f-af01-4a9d-9570-06c9e3966e6a"
+      },
+      "source": [
+        "list_a = []\n",
+        "print(list_a)"
+      ],
+      "execution_count": 20,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "[]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "rqOq4DORTiQd",
+        "outputId": "f8a343de-e84d-4825-edd2-9b66609bd6dd"
+      },
+      "source": [
+        "list_b = [1,5,'v']\n",
+        "list_b"
+      ],
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[1, 5, 'v']"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 22
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "vAsq7ra8Tzt7"
+      },
+      "source": [
+        "ลำดับที่อยู่ใน list มีความสำคัญ (ลำดับในlist เริ่มจาก 0,1,2,3,...)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "UBcBDC5cUBzW",
+        "outputId": "0f95c5d8-db21-4f4d-e890-8c5fa57c558c"
+      },
+      "source": [
+        "list_b[1]"
+      ],
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "5"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 23
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Li6gSnwCUHxl"
+      },
+      "source": [
+        "แบบที่2"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "HCea_j9lUKjr",
+        "outputId": "073f1832-5d57-4a95-89c0-00753210b641"
+      },
+      "source": [
+        "list_c = list()\n",
+        "print(list_c)"
+      ],
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "[]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "1m7EvAj3UZwr"
+      },
+      "source": [
+        "append()เพิ่มสมาชิกใน list"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qW2LD29kUf9i",
+        "outputId": "a9fe0064-d997-4554-9b0c-ba3900dbc67d"
+      },
+      "source": [
+        "list_b.append('u')\n",
+        "print(list_b)"
+      ],
+      "execution_count": 25,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "[1, 5, 'v', 'u']\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 38
+        },
+        "id": "19W8TzA8UrPJ",
+        "outputId": "01ddaf0c-41a3-4f42-aaef-40fa1d28b328"
+      },
+      "source": [
+        "list_b.pop()"
+      ],
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            },
+            "text/plain": [
+              "'u'"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 27
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "FfbocipZU3rI",
+        "outputId": "7b936671-05b1-42be-9386-4cb9fe7e7fbe"
+      },
+      "source": [
+        "list_b"
+      ],
+      "execution_count": 28,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[1, 5, 'v']"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 28
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "b_dTi_6sU7LS",
+        "outputId": "aae742ec-c432-4c68-834f-497b6e15a6c1"
+      },
+      "source": [
+        "list_b.append(list_a)\n",
+        "print(list_b)"
+      ],
+      "execution_count": 29,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "[1, 5, 'v', []]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "grTAhD7zVHAg"
+      },
+      "source": [
+        "String>listof characters"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_bOUB3MhVNUC",
+        "outputId": "84e48942-c0c9-4a19-f9de-2fc634728bcd"
+      },
+      "source": [
+        "len(list_b)"
+      ],
+      "execution_count": 30,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "4"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 30
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 38
+        },
+        "id": "BfSwH5TRVTpM",
+        "outputId": "d5eec75a-2a25-4c8f-d2cf-3d61ccf69e95"
+      },
+      "source": [
+        "t = 'python is easy'\n",
+        "t"
+      ],
+      "execution_count": 31,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            },
+            "text/plain": [
+              "'python is easy'"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 31
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3xtnrHuPVbx-",
+        "outputId": "b9f4ae41-2ce9-4fd4-9799-08a6bd0c273d"
+      },
+      "source": [
+        "len(t)"
+      ],
+      "execution_count": 32,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "14"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 32
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "ZZNr5PyWVe9D"
+      },
+      "source": [
+        "access a member of a list (ist&string)โดยเริ่มนับจาก 0 0คือสมาชิกตัวแรก,-1คือสมาชิกตัวสุดท้าย"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 38
+        },
+        "id": "Q0AyClwyVzkw",
+        "outputId": "d7806af1-7c19-48d1-ffb5-d3cffd9d8092"
+      },
+      "source": [
+        "t[-3]"
+      ],
+      "execution_count": 33,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            },
+            "text/plain": [
+              "'a'"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 33
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "tzP0UfroV4N2"
+      },
+      "source": [
+        "ตัวที่อยู่ข้างใน[]เราเรียกว่า index(ตัวชี้)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "X0nFn09VWC6I"
+      },
+      "source": [
+        "List slicing"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "B6nn3_osWHk8"
+      },
+      "source": [
+        "[a:b] -> [a,b]"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4NiQ-2I5WVZl",
+        "outputId": "eae03ece-4c0e-4d0a-83c7-c51cb284069b"
+      },
+      "source": [
+        "print(t)\n",
+        "print(t[7:9])"
+      ],
+      "execution_count": 34,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "python is easy\n",
+            "is\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "29_kfjBeWfVZ"
+      },
+      "source": [
+        "ถ้าเว้นว่างหน้า : หมายความว่า เริ่มตั้งแต่ตัวแรก\n",
+        "\n",
+        "ถ้าเว้นว่างหลัง : หมายความว่า ไปจนถึงตัวสุดท้าย"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "HYJojmzSWvoi",
+        "outputId": "20a9b0b9-9e7c-4613-e400-dbb42f3c2724"
+      },
+      "source": [
+        "print(t)\n",
+        "print(t[:6])\n",
+        "print(t[10:])\n",
+        "print(t[-4:])\n",
+        "print(t[:])"
+      ],
+      "execution_count": 35,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "python is easy\n",
+            "python\n",
+            "easy\n",
+            "easy\n",
+            "python is easy\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "ScTP7ITBXW6g"
+      },
+      "source": [
+        "เราสามารถเอา list มาต่อกันได้ด้วย+"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 38
+        },
+        "id": "HnfSx6uEXgaY",
+        "outputId": "f933422b-dc1e-49d6-c680-034476c3c2fe"
+      },
+      "source": [
+        "t + '??'"
+      ],
+      "execution_count": 36,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            },
+            "text/plain": [
+              "'python is easy??'"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 36
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 171
+        },
+        "id": "EjVeaXJxXnSe",
+        "outputId": "f2b87ef5-4a3c-4852-a84f-9c6498f1be0b"
+      },
+      "source": [
+        "t + list_b"
+      ],
+      "execution_count": 37,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "TypeError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-37-595774a47886>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mt\u001b[0m \u001b[0;34m+\u001b[0m \u001b[0mlist_b\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m: must be str, not list"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5gRDH73vXsT4",
+        "outputId": "501f8836-2d43-48f6-87cf-86c0f3377dfa"
+      },
+      "source": [
+        "list_b + list_b"
+      ],
+      "execution_count": 38,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[1, 5, 'v', [], 1, 5, 'v', []]"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 38
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "PEff_3n6XxdD"
+      },
+      "source": [
+        "การแบ่ง string ตามสัญลักษณ์ที่กำหนด ->split string"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "OhfcN1DqYAqC",
+        "outputId": "a9869bed-095f-4a30-e7c6-8b8b15f0a652"
+      },
+      "source": [
+        "t.split(' ')"
+      ],
+      "execution_count": 39,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['python', 'is', 'easy']"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 39
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Sz9ntxq9YHj9",
+        "outputId": "aa9c3ffc-8c90-4ef8-c5c8-5d4506045a9c"
+      },
+      "source": [
+        "t_sp = t.split(' ')\n",
+        "print(t_sp)\n",
+        "#วิธีรวมกลับ\n",
+        "print(':'.join(t_sp))"
+      ],
+      "execution_count": 41,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "['python', 'is', 'easy']\n",
+            "python:is:easy\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "E1NdMj9FYknI"
+      },
+      "source": [
+        "time = '12:30:15'"
+      ],
+      "execution_count": 42,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2d05LZi0YtJN",
+        "outputId": "3e16af89-4087-4f72-9947-7d7824d1a9d5"
+      },
+      "source": [
+        "time.split(':')"
+      ],
+      "execution_count": 43,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['12', '30', '15']"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 43
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "1JxDPTKYYzS4"
+      },
+      "source": [
+        "HW"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "hQufjEXxY15K"
+      },
+      "source": [
+        "คำนวณเวลาเป็นวินาทีของเวลาต่อไปนี้โดยใช้คำสั่ง split ช่วย(printออกมาให้สวยงาม)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "l_TnJOqHZIHB"
+      },
+      "source": [
+        "12:30:15\n",
+        "13:41:07\n",
+        "12:53:15\n",
+        "00:59:25\n",
+        "11:11:11\n",
+        "16:06:09"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ghyZrk5zZVc8",
+        "outputId": "b80256a3-250e-4fc4-bda6-afc05d19e4ed"
+      },
+      "source": [
+        "#12:30:15\n",
+        "T1 = '12:30:15'\n",
+        "list1 = T1.split(':')\n",
+        "h1=list1[0]\n",
+        "H1=int(h1)*3600\n",
+        "m1=list1[1]\n",
+        "M1=int(m1)*60\n",
+        "s1=list1[2]\n",
+        "S1=int(s1)\n",
+        "print(f'12:30:15 สามารถคำนวณเวลาให้เป็นวินาทีได้เท่ากับ {H1+M1+S1} วินาที')"
+      ],
+      "execution_count": 50,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "12:30:15 สามารถคำนวณเวลาให้เป็นวินาทีได้เท่ากับ 45015 วินาที\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JF__qZBbZpsB",
+        "outputId": "948135a8-b4fa-4b6f-dcab-2782bbe72bc3"
+      },
+      "source": [
+        "#13:41:07\n",
+        "T2 = '13:41:07'\n",
+        "list2 = T2.split(':')\n",
+        "h2=list2[0]\n",
+        "H2=int(h2)*3600\n",
+        "m2=list2[1]\n",
+        "M2=int(m2)*60\n",
+        "s2=list2[2]\n",
+        "S2=int(s2)\n",
+        "print(f'13:41:07 สามารถคำนวณเวลาให้เป็นวินทีได้เท่ากับ {H2+M2+S2} วินาที')"
+      ],
+      "execution_count": 54,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "13:41:07 สามารถคำนวณเวลาให้เป็นวินทีได้เท่ากับ 49267 วินาที\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "oWe0Uwe0dR-m",
+        "outputId": "d0c67859-0dce-4488-f0c1-9d30f46471fa"
+      },
+      "source": [
+        "#12:53:15\n",
+        "T3 = '12:53:15'\n",
+        "list3 = T3.split(':')\n",
+        "h3=list3[0]\n",
+        "H3=int(h3)*3600\n",
+        "m3=list3[1]\n",
+        "M3=int(m3)*60\n",
+        "s3=list3[2]\n",
+        "S3=int(s3)\n",
+        "print(f'12:53:15 สามารถคำนวณเป็นวินาทีได้เท่ากับ {H3+M3+S3} วินาที')"
+      ],
+      "execution_count": 58,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "12:53:15 สามารถคำนวณเป็นวินาทีได้เท่ากับ 46395 วินาที\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JVLznzbJeGka",
+        "outputId": "cac4c528-4ed4-412b-c215-ee24aa43a6e3"
+      },
+      "source": [
+        "#00:59:25\n",
+        "T4 = '00:59:25'\n",
+        "list4 = T4.split(':')\n",
+        "h4=list4[0]\n",
+        "H4=int(h4)*3600\n",
+        "m4=list4[1]\n",
+        "M4=int(m4)*60\n",
+        "s4=list4[2]\n",
+        "S4=int(s3)\n",
+        "print(f'00:59:25 สามารถคำนวณเป็นวินาทีได้เท่ากับ {H4+M4+S4} วินาที')"
+      ],
+      "execution_count": 62,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "00:59:25 สามารถคำนวณเป็นวินาทีได้เท่ากับ 3555 วินาที\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "PhT6bDKZe7mT",
+        "outputId": "cf39569a-2f98-4a28-eb0d-acaf076f405e"
+      },
+      "source": [
+        "#11:11:11\n",
+        "T5 = '11:11:11'\n",
+        "list5 = T5.split(':')\n",
+        "h5=list5[0]\n",
+        "H5=int(h5)*3600\n",
+        "m5=list5[1]\n",
+        "M5=int(m5)*60\n",
+        "s5=list5[2]\n",
+        "S5=int(s5)\n",
+        "print(f'11:11:11 สามารถคำนวณเป็นวินาทีได้เท่ากับ {H5+M5+S5} วินาที')\n"
+      ],
+      "execution_count": 68,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "11:11:11 สามารถคำนวณเป็นวินาทีได้เท่ากับ 40271 วินาที\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wquCamGjgCld",
+        "outputId": "6ff12016-5142-4c6f-f5a9-82f31cae127d"
+      },
+      "source": [
+        "#16:06:09\n",
+        "T6 = '16:06:09'\n",
+        "list6 = T6.split(':')\n",
+        "h6=list6[0]\n",
+        "H6=int(h6)*3600\n",
+        "m6=list6[1]\n",
+        "M6=int(m6)*60\n",
+        "s6=list6[2]\n",
+        "S6=int(s6)\n",
+        "print(f'16:06:09 สามารถคำนวณเป็นวินาทีได้เท่ากับ {H6+M6+S6} วินาที')"
+      ],
+      "execution_count": 72,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "16:06:09 สามารถคำนวณเป็นวินาทีได้เท่ากับ 57969 วินาที\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "46d4huRWcpTg"
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
